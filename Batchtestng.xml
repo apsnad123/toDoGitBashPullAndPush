@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="classes" name="Suite">
+	<listeners>
+		<listener class-name="com.crm.CAH.generic_Utility.ListerImplimentationClass"></listener>
+	</listeners>
+  <test thread-count="3" parallel="classes" name="Test">
+    <classes>
+      <class name="product_module_Generic.DublicatingProduct_GenericUtilsTest"/>
+      <class name="product_module_Generic.CreatingProduct_GenericUtilsTest"/>
+      <class name="product_module_Generic.DeletingProduct_GenericUtilsTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
